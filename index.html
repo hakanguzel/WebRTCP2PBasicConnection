@@ -1,0 +1,33 @@
+<script src="/socket.io/socket.io.js"></script>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="/js/lib/eventemitter.js"></script>
+<script src="/js/lib/helper.js"></script>
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<div id="content">
+    <div class="wrap">
+        <section id="share-wrap">
+            <a href="#" id="unique-token">Bu odanın bağlantısını paylaşın</a>
+        </section>
+
+        <section id="enter-wrap">
+            <div id="create-wrap">
+                <p>Bir video konferans başlatmak ister misiniz?</p>
+                <button id="btn-start">Başlat</button>
+            </div>
+            <div id="wait-wrap"></div>
+        </section>
+
+        <section id="video-wrap">
+            <div class="buttons">
+                <button id="btn-camera">Kamera Duraklat</button>
+                <button id="btn-mic">Mikrofon Sesini Kapatma</button>
+            </div>
+        </section>
+    </div>
+</div>
+
+
+<script src="js/modules/peer-handler.js"></script>
+<script src="js/modules/media-handler.js"></script>
+<script src="/js/lib/DetectRTC.js"></script>
+<script src="js/main.js"></script>
